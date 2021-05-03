@@ -27,7 +27,7 @@ from config import BOT_NAME as bn
 @Client.on_message(filters.command("start") & filters.private & ~filters.channel)
 async def start(_, message: Message):
     await message.reply_text(
-        f"""Hi there! I can play music in voice chats of Telegeam Groups. I have a lot of cool feature that will amaze you!\n\n♪ Do you want me to play music in your Telegram groups'voice chats? Please click the \'ℹ️ Helpful Commands ℹ️\' button below to know how you can use me.\n\n♪ The Assistant must be in your group to play music in the voice chat of your group.\n\n♪ More info & commands mentioned in the [ℹ️ Helpful Commands ℹ️](https://telegra.ph/Group-Music-Bot-05-03)\n\nℹ️Please Subscribe @ZauteKm For more Info.""",
+        f"""Hi there! I can play music in voice chats of Telegeam Groups. I have a lot of cool feature that will amaze you!\n\n♪ Do you want me to play music in your Telegram groups'voice chats? Please click the <b>\'Helpful Commands\'</b> button below to know how you can use me.\n\n♪ The Assistant must be in your group to play music in the voice chat of your group.\n\n♪ More info & commands mentioned in the [Helpful Commands.](https://telegra.ph/Group-Music-Bot-05-03)\n\nℹ️ Please Subscribe @ZauteKm For more Info.""",
         reply_markup=InlineKeyboardMarkup(
             [ 
                 [
@@ -35,14 +35,14 @@ async def start(_, message: Message):
                         "ℹ️ Helpful Commands ℹ️", url="https://telegra.ph/Group-Music-Bot-05-03")
                   ],[
                     InlineKeyboardButton(
-                        "💬 Group", url="https://t.me/joinchat/7gSUxv6vgQE3M2Fl"
+                        "🎙️ Group", url="https://t.me/joinchat/7gSUxv6vgQE3M2Fl"
                     ),
                     InlineKeyboardButton(
-                        "🔊 Channel", url="https://t.me/ZauteKm"
+                        "Channel 🔊", url="https://t.me/ZauteKm"
                     )
                 ],[ 
                     InlineKeyboardButton(
-                        "YouTube Channel", url="https://youtube.com/c/MizoHelpDesK"
+                        "⚜️ YouTube Channel ⚜️", url="https://youtube.com/c/MizoHelpDesK"
                     )]
             ]
         ),
