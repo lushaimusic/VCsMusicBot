@@ -30,6 +30,13 @@ Before clicking on deploy to heroku just click on fork and star just below
 
  [![Run on Repl.it](https://camo.githubusercontent.com/05149b448485553c6f14f6430a45c12dcc79ed3c/68747470733a2f2f7265706c2e69742f62616467652f6769746875622f6a61727669733231303930342f4a6172766973)](https://replit.com/@ZauteKm/GenerateStringSession#main.py)
 
+## How to deploy 
+
+Click the below button to watch the video tutorial on deploying
+
+<a href="https://youtu.be/1Tv6Uh4DN88"><img src="https://img.shields.io/badge/How%20To%20Deploy-blue.svg?logo=Youtube"></a>
+<a href="https://youtu.be/1Tv6Uh4DN88"><img src="https://img.shields.io/youtube/views/1Tv6Uh4DN88?style=social">
+
 <h2> Whats new 🔥 </h2>
 
 - Thumbnail Support
