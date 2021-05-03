@@ -1,6 +1,8 @@
-### <p align="center">Group Music Bot-v2 🎶</p>
+<h1 align="centre">Music Bot-v2 🎵</h1>
 
 ### A bot that can play music on telegram group's voice call
+
+### This is Version 2 of [Music Bot](https://githup.com/ZauteKm/MusicBot)
 
 <p align="center">
   <img src="https://telegra.ph/file/85c27bab11448028fafe4.jpg">
