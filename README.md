@@ -1,9 +1,9 @@
-<h1 align="centre">Group Music Bot v2 🎵</h1>
+<h1 align="centre">Group Music Bot-v2 🎶</h1>
 
 ### A bot that can play music on telegram group's voice call
 
 <p align="center">
-  <img src="https://telegra.ph/file/fd60c41861579adfaf394.jpg">
+  <img src="https://telegra.ph/file/85c27bab11448028fafe4.jpg">
 </p>
 
 ### Deploy To Heroku</h4>
@@ -49,3 +49,10 @@
 - `/userbotjoin` - invite assistant to your chat
 - `/userbotleave` - remove assistant from your chat
 - `/admincache` - Refresh admin list
+
+# Support Group:
+<a href="https://t.me/MizoHelpDesK"><img src="https://img.shields.io/badge/Telegram-Join%20Telegram%20Group-blue.svg?logo=telegram"></a>
+# Support Channel:
+<a href="https://t.me/ZauTeKm"><img src="https://img.shields.io/badge/Telegram-Join%20Telegram%20Channel-red.svg?logo=telegram"></a>
+# Music Support Group:
+<a href="https://t.me/ZauteMusic"><img src="https://img.shields.io/badge/Telegram-Join%20Telegram%20Group-black.svg?logo=telegram"></a>
