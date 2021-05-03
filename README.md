@@ -55,4 +55,4 @@
 # Support Channel:
 <a href="https://t.me/ZauTeKm"><img src="https://img.shields.io/badge/Telegram-Join%20Telegram%20Channel-red.svg?logo=telegram"></a>
 # Music Support Group:
-<a href="https://t.me/ZauteMusic"><img src="https://img.shields.io/badge/Telegram-Join%20Telegram%20Group-black.svg?logo=telegram"></a>
+<a href="https://t.me/ZauteMusic"><img src="https://img.shields.io/badge/Telegram-Join%20Telegram%20Group-pink.svg?logo=telegram"></a>
