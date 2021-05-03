@@ -24,8 +24,12 @@ from config import BOT_NAME as bn
 
 
 
-@Client.on_message(filters.command("start") & filters.private & ~filters.channel)
-async def start(_, message: Message):
+@Client.on_message(
+    filters.command("start")
+    & filters.private
+    & ~ filters.edited
+)
+async def start_(client: Client, message: Message):
     await message.reply_text(
         f"""Hi there! I can play music in voice chats of Telegeam Groups. I have a lot of cool feature that will amaze you!\n\n♪ Do you want me to play music in your Telegram groups'voice chats? Please click the <b>\'Helpful Commands\'</b> button below to know how you can use me.\n\n♪ The Assistant must be in your group to play music in the voice chat of your group.\n\n♪ More info & commands mentioned in the [Helpful Commands.](https://telegra.ph/Group-Music-Bot-05-03)\n\nℹ️ Please Subscribe @ZauteKm For more Info.\n\n <b>Hit /help list of available Commands.</b>""",
         reply_markup=InlineKeyboardMarkup(
