@@ -1,4 +1,4 @@
-# Daisyxmusic (Telegram bot project )
+# ZauteMusic (Telegram bot project )
 # Copyright (C) 2021  ZauteKm 
 
 # This program is free software: you can redistribute it and/or modify
