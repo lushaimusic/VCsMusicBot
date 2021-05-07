@@ -15,7 +15,6 @@
 # along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 
-
 from os import path
 from typing import Dict
 from pyrogram import Client
