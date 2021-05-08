@@ -198,7 +198,7 @@ def r_ply(type_):
                 
             ],
             [
-                InlineKeyboardButton('Playlist 📖', 'playlist'),
+                InlineKeyboardButton('Playlist📃', 'playlist'),
                 
             ],
             [       
@@ -371,7 +371,7 @@ async def m_cb(b, cb):
                 
                 ],
                 [
-                    InlineKeyboardButton('Playlist 📖', 'playlist'),
+                    InlineKeyboardButton('Playlist 📃', 'playlist'),
                 
                 ],
                 [       
@@ -416,7 +416,7 @@ async def m_cb(b, cb):
 @Client.on_message(command("play") & other_filters)
 async def play(_, message: Message):
     global que
-    lel = await message.reply("🔄 **Processing**")
+    lel = await message.reply("⏳ **Processing**")
     administrators = await get_administrators(message.chat)
     chid = message.chat.id
 
@@ -477,7 +477,7 @@ async def play(_, message: Message):
     for i in message.command[1:]:
         query += ' ' + str(i)
     print(query)
-    await lel.edit("🎵 **Processing**")
+    await lel.edit("⏳ **Processing**")
     ydl_opts = {"format": "bestaudio[ext=m4a]"}
     try:
         results = YoutubeSearch(query, max_results=1).to_dict()
@@ -501,7 +501,7 @@ async def play(_, message: Message):
             [   
                 [
                                
-                    InlineKeyboardButton('📖 Playlist', callback_data='playlist'),
+                    InlineKeyboardButton('📃 Playlist', callback_data='playlist'),
                     InlineKeyboardButton('Menu ⏯ ', callback_data='menu')
                 
                 ],                     
@@ -550,7 +550,7 @@ async def play(_, message: Message):
         await message.reply_photo(
         photo="final.png",
         reply_markup=keyboard,
-        caption="▶️ **Playing** here the song requested by {} via Group Music Bot 👨‍🎤".format(
+        caption="🎶 **Playing** here the song requested by {} ".format(
         message.from_user.mention()
         ),
     )
@@ -565,7 +565,7 @@ async def play(_, message: Message):
 )
 async def deezer(client: Client, message_: Message):
     global que
-    lel = await message_.reply("🔄 **Processing**")
+    lel = await message_.reply("⏳ **Processing**")
     administrators = await get_administrators(message_.chat)
     chid = message_.chat.id
     try:
@@ -666,7 +666,7 @@ async def deezer(client: Client, message_: Message):
         qeue.append(appendable)
         await res.edit_text(f"♪ Group Music Bot ♪= #️⃣ Queued at position {position}")
     else:
-        await res.edit_text("♪ Group Music Bot ♪=▶️ Playing.....")
+        await res.edit_text("♪ Group Music Bot ♪=🎶 Playing.....")
         chat_id = message_.chat.id
         que[chat_id] = []
         qeue = que.get(message_.chat.id)
@@ -695,7 +695,7 @@ async def deezer(client: Client, message_: Message):
 )
 async def jiosaavn(client: Client, message_: Message):
     global que
-    lel = await message_.reply("🔄 **Processing**")
+    lel = await message_.reply("⏳ **Processing**")
     administrators = await get_administrators(message_.chat)
     chid = message_.chat.id
     try:
@@ -769,7 +769,7 @@ async def jiosaavn(client: Client, message_: Message):
     keyboard = InlineKeyboardMarkup(
          [   
              [
-               InlineKeyboardButton('📖 Playlist', callback_data='playlist'),
+               InlineKeyboardButton('📃 Playlist', callback_data='playlist'),
                InlineKeyboardButton('Menu ⏯ ', callback_data='menu')   
              ],                     
              [
@@ -804,7 +804,7 @@ async def jiosaavn(client: Client, message_: Message):
         )           
            
     else:
-        await res.edit_text("♪ Group Music Bot ♪=▶️ Playing.....")
+        await res.edit_text("♪ Group Music Bot ♪=🎶 Playing.....")
         chat_id = message_.chat.id
         que[chat_id] = []
         qeue = que.get(message_.chat.id)
