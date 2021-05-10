@@ -31,22 +31,28 @@ from config import BOT_NAME as bn
 )
 async def start_(client: Client, message: Message):
     await message.reply_text(
-        f"""<b>Hi there! I can play music in voice chats of Telegeam Groups. I have a lot of cool feature that will amaze you!</> \n\n♪ Do you want me to play music in your Telegram groups'voice chats? <b>Hit /help to know how you can use me.</b> \n\n♪ The Assistant must be in your group to play music in the voice chat of your group.\n\n♪ More info & commands mentioned in the [Helpful Commands.](https://telegra.ph/Group-Music-Bot-05-03)\n\nℹ️ <b>Please Subscribe @ZauteKm For more Info.</b>""",
+        f"""<b>Hi there! I can play music in voice chats of Telegeam Groups. I have a lot of cool feature that will amaze you!</b> \n\n♪ Do you want me to play music in your Telegram groups'voice chats? <b>Hit /help to know how you can use me.</b> \n\n♪ The Assistant must be in your group to play music in the voice chat of your group.\n\n♪ More info & commands mentioned in the [Helpful Commands.](https://telegra.ph/Group-Music-Bot-05-03)\n\nℹ️ <b>Please Subscribe @ZauteKm For more Info.</b>""",
         reply_markup=InlineKeyboardMarkup(
             [ 
                 [
                     InlineKeyboardButton(
-                        "ℹ️ Source Code ℹ️", url="https://github.com/ZauteKm/GroupMusicBot-v2")
+                        "➕ Add me to Your Group ➕", url="t.me/zk_GvCBot?startgroup=true")
                   ],[
                     InlineKeyboardButton(
                         "🎙️ Group", url="https://t.me/joinchat/7gSUxv6vgQE3M2Fl"
                     ),
                     InlineKeyboardButton(
-                        "Channel 🔊", url="https://t.me/ZauteKm"
+                        "Channel 📢", url="https://t.me/ZauteKm")
+                    ],[
+                    InlineKeyboardButton(
+                        "👥 Support", url="https://t.me/joinchat/TBKI3d9nCF8xMBsL"
+                    ),
+                    InlineKeyboardButton(
+                        "Feedback 💭", url="https://t.me/ZauteBot"
                     )
                 ],[ 
                     InlineKeyboardButton(
-                        "⚜️ YouTube Channel ⚜️", url="https://youtube.com/c/MizoHelpDesK"
+                        "🔰 Music Source Code 🔰", url="https://githup.com/ZauteKm/GroupMusicBot-v2"
                     )]
             ]
         ),
