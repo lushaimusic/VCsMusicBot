@@ -35,21 +35,40 @@ async def start_(client: Client, message: Message):
         reply_markup=InlineKeyboardMarkup(
             [ 
                 [
-                    InlineKeyboardButton(
-                        "ℹ️ Source Code ℹ️", url="https://github.com/ZauteKm/GroupMusicBot-v2")
-                  ],[
-                    InlineKeyboardButton(
-                        "🎙️ Group", url="https://t.me/joinchat/7gSUxv6vgQE3M2Fl"
-                    ),
-                    InlineKeyboardButton(
-                        "Channel 🔊", url="https://t.me/ZauteKm"
-                    )
-                ],[ 
-                    InlineKeyboardButton(
-                        "⚜️ YouTube Channel ⚜️", url="https://youtube.com/c/MizoHelpDesK"
-                    )]
-            ]
-        ),
+                    InlineKeyboardButton(text="➕ Add me to your Chat ➕",
+                                url="t.me/{}?startgroup=true".format(
+                                    bot.username
+                                ),
+                            )
+                        ],
+                        [
+                            InlineKeyboardButton(
+                                text="🎙️ Group",
+                                url=f"https://t.me/joinchat/7gSUxv6vgQE3M2Fl",
+                            ),
+                            InlineKeyboardButton(
+                                text="Channel 📢",
+                                url="https://t.me/ZauteKm",
+                            ),
+                        ],
+                        [
+                            InlineKeyboardButton(
+                                text="🔧 Support",
+                                url=f"https://t.me/joinchat/TBKI3d9nCF8xMBsL",
+                            ),
+                            InlineKeyboardButton(
+                                text="Information 💬",
+                                url="https://t.me/ZauteBot",
+                            ),
+                        ],
+                        [
+                            InlineKeyboardButton(text="🔰 Music Source Code 🔰",
+                                url="http://githup.com/ZauteKm/GroupMusicBot-v2",
+                            ),
+                        ],
+                    ]
+                ),
+            )
      disable_web_page_preview=True
     )
 
