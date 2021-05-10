@@ -48,7 +48,7 @@ async def start_(client: Client, message: Message):
                         "👥 Support", url="https://t.me/joinchat/TBKI3d9nCF8xMBsL"
                     ),
                     InlineKeyboardButton(
-                        "Information 📢", url="https://t.me/ZauteBot"
+                        "Developer 🎶", url="https://t.me/ZauteBot"
                     )
                 ],[ 
                     InlineKeyboardButton(
