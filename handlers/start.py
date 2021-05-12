@@ -36,7 +36,7 @@ async def start_(client: Client, message: Message):
 <b>🎙️ Groups Music</b> is a <b>project</b> designed for <b>play,</b> as simple <b>as possible, music in your groups</b> through the new voice chats.
 
 <b>❓ How to use it?</b>
-Press the » 🎛 <b>Commands</b> button & Hits /help to view the full list of <the commands of the bot!</b>""",
+Press the » 🎛 <b>Commands</b> button & Hits /help to view the full list of <b>the commands of the bot!</b>""",
         reply_markup=InlineKeyboardMarkup(
             [ 
                 [
