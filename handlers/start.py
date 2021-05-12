@@ -50,10 +50,10 @@ Press the » 🎛 <b>Commands</b> button & Hits /help to view the full list of <
                         "Credits ❤️", url="https://t.me/ZauteBot")
                     ],[
                     InlineKeyboardButton(
-                        "👥 Official Group", url="https://t.me/joinchat/TBKI3d9nCF8xMBsL"
+                        "👥 Official Group", url="https://t.me/joinchat/7gSUxv6vgQE3M2Fl"
                     ),
                     InlineKeyboardButton(
-                        "Official Channel 📢", url="https://t.me/ZauteBot"
+                        "Official Channel 📢", url="https://t.me/ZauteKm"
                     )
                 ],[ 
                     InlineKeyboardButton(
