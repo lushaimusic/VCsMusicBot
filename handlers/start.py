@@ -99,7 +99,8 @@ async def start(client: Client, message: Message):
 async def help(client: Client, message: Message):
     await message.reply_text(
         f"""<b><u>Helpful Commands!</u>
-\n/play <song name> - play song you requested
+/play <song name> - play song you requested
+/audio - Reply Audio/Mp3 or YT URL
 /dplay <song name> - play song you requested via deezer
 /splay <song name> - play song you requested via jio saavn
 /playlist - Show now playing list
