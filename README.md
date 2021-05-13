@@ -71,7 +71,7 @@ Click the below button to watch the video tutorial on deploying
 - `/end` - stop music play
 - `/userbotjoin` - invite assistant to your chat
 - `/userbotleave` - remove assistant from your chat
-- `/admincache` - Refresh admin list
+- `/reload` - Refresh admin list
 
 # Support Group:
 <a href="https://t.me/MizoHelpDesK"><img src="https://img.shields.io/badge/Telegram-Join%20Telegram%20Group-blue.svg?logo=telegram"></a>
