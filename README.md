@@ -69,6 +69,7 @@ Click the below button to watch the video tutorial on deploying
 
 ### Commands 🛠
 - `/play <song name>` - play song you requested
+- `/audio - Reply Audio/Mp3 or YT URL
 - `/dplay <song name>` - play song you requested via deezer
 - `/splay <song name>` - play song you requested via jio saavn
 - `/playlist` - Show now playing list
