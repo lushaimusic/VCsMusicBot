@@ -116,7 +116,8 @@ async def help(client: Client, message: Message):
 /skip - play next song
 /end - stop music play
 /userbotjoin - invite assistant to your chat
-/admincache - Refresh admin list
+/userbotleave - remove assistant from your chat
+/reload - Refresh admin list
  </b>""",
         reply_markup=InlineKeyboardMarkup(
             [
