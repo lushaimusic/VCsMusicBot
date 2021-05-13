@@ -31,7 +31,7 @@ from helpers.filters import command, other_filters
 from helpers.decorators import errors, authorized_users_only
 from config import que, admins as a
 
-@Client.on_message(filters.command('adminreset'))
+@Client.on_message(filters.command('reload'))
 async def update_admin(client, message):
     global a
     admins = await client.get_chat_members(message.chat.id, filter="administrators")
