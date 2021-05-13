@@ -41,7 +41,7 @@ Press the » 🎛 <b>Commands</b> button & Hits /help to view the full list of <
             [ 
                 [
                     InlineKeyboardButton(
-                        "➕ Add me to Your Group ➕", url="t.me/zk_GvCBot?startgroup=true")
+                        "➕ Add me to your Group ➕", url="t.me/zk_GvCBot?startgroup=true")
                   ],[
                     InlineKeyboardButton(
                         "🎛️ Commands", url="https://telegra.ph/Group-Music-Bot-05-03"
