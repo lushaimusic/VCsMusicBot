@@ -1,11 +1,20 @@
-<h1 align="centre">Music Bot-v2 🎵</h1>
+### Telegram Voice Chat Bot
 
-### A bot that can play music on telegram group's voice call
+### Group Music Bot v2
 
+A bot that can play music on telegram group's voice call.Telegram bot + userbot for streaming audio in group calls.
+
+<p align="center">
+  <a href="https://github.com/ZauteKm/GroupMusicBot-v2">
+     <img height="30px" src="https://img.shields.io/badge/Group%20Music%20Bot-red?style=for-the-badge&logo=github">
+  </a>
+</p>
 ### This is Version 2 of [Music Bot](https://githup.com/ZauteKm/MusicBot)
 
 <p align="center">
-  <img src="https://telegra.ph/file/85c27bab11448028fafe4.jpg">
+  <a href="https://telegra.ph/file/377046105f8acf1bde837.jpg">
+     <img height="150px" src="https://telegra.ph/file/377046105f8acf1bde837.jpg">
+  </a>
 </p>
 
 ## Give your 💙
@@ -22,7 +31,7 @@ Before clicking on deploy to heroku just click on fork and star just below
   </a>
 </p>
 
-### Deploy To Heroku</h4>
+### Deploy To Heroku 📡</h4>
 
 <p align="center"><a href="https://heroku.com/deploy?template=https://github.com/ZauTeKm/GroupMusicBot-v2"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-blueviolet?style=for-the-badge&logo=heroku" width="210" height="34.45"/></a></p>
 
@@ -37,21 +46,27 @@ Click the below button to watch the video tutorial on deploying
 <a href="https://youtu.be/1Tv6Uh4DN88"><img src="https://img.shields.io/badge/How%20To%20Deploy-blue.svg?logo=Youtube"></a>
 <a href="https://youtu.be/1Tv6Uh4DN88"><img src="https://img.shields.io/youtube/views/1Tv6Uh4DN88?style=social">
 
-<h2> Whats new 🔥 </h2>
+### Features✨
 
 - Thumbnail Support
 - Playlist Support
 - Current playback support
 - Showing track names when skipping
 - Zero downtime, Fully Stable
-- DEEZER,YOUTUBE & SAAVN PLAYBACK SUPPORTED
+- Deezer,YouTube & Saavan PlayBack Supported
 - Settings panel
 - Control with buttons
 - Userbot auto join
+- Thanks Message When Add The Bot Join On A Group
+
+<h3>Requirements 📝</h3>
+
+- FFmpeg
+- NodeJS [nodesource.com](https://nodesource.com/)
+- Python 3.7+
+- [PyTgCalls](https://github.com/pytgcalls/pytgcalls)
 
 ### Commands 🛠
-#### For all in group
-
 - `/play <song name>` - play song you requested
 - `/dplay <song name>` - play song you requested via deezer
 - `/splay <song name>` - play song you requested via jio saavn
@@ -63,7 +78,7 @@ Click the below button to watch the video tutorial on deploying
 - `/saavn <song name>` - download songs you want quickly via saavn
 - `/video <song name>` - download videos you want quickly
 
-#### Admins only.
+#### Admins only.👮🏻‍♂️
 - `/player` - open music player settings panel
 - `/pause` - pause song play
 - `/resume` - resume song play
