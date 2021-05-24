@@ -1,4 +1,4 @@
-### Group Music Bot v4
+<h1 align="centre">GroupMusicBot V4.0</h1>
 
 ### A bot that can play music on Telegram Group and Channel Voice Chats
 #### POWERED BY [PYTGCALLS](https://github.com/pytgcalls/pytgcalls)
