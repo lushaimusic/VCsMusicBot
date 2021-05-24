@@ -102,7 +102,7 @@ $ python(3) -m MusicBot
 - `/end` - stop music play
 - `/userbotjoin` - invite assistant to your chat
 - `/userbotleave` - remove assistant from your chat
-- `/admincache` - Refresh admin list
+- `/reload` - Refresh admin list
 
 ### Commands for Channel Music Play 🛠
 For linked group admins only:
