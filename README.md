@@ -1,11 +1,10 @@
-### Telegram Voice Chat Bot
+### Group Music Bot v4
 
-### Group Music Bot v2
-
-A bot that can play music on telegram group's voice call.Telegram bot + userbot for streaming audio in group calls.
+### A bot that can play music on Telegram Group and Channel Voice Chats
+#### POWERED BY [PYTGCALLS](https://github.com/pytgcalls/pytgcalls)
 
 <p align="center">
-  <a href="https://github.com/ZauteKm/GroupMusicBot-v2">
+  <a href="https://github.com/ZauteKm/GroupMusicBot">
      <img height="30px" src="https://img.shields.io/badge/Group%20Music%20Bot-red?style=for-the-badge&logo=github">
   </a>
 </p>
@@ -54,22 +53,37 @@ Click the below button to watch the video tutorial on deploying
 - Current playback support
 - Showing track names when skipping
 - Zero downtime, Fully Stable
-- Deezer,YouTube & Saavan PlayBack Supported
+- DEEZER,YOUTUBE & SAAVN PLAYBACK SUPPORTED
 - Settings panel
 - Control with buttons
 - Userbot auto join
-- Thanks Message When Add The Bot Join On A Group
-
-<h3>Requirements 📝</h3>
+- Channel Music Play
+### Requirements 📝
 
 - FFmpeg
 - NodeJS [nodesource.com](https://nodesource.com/)
 - Python 3.7+
 - [PyTgCalls](https://github.com/pytgcalls/pytgcalls)
 
-### Commands 🛠
+### ⚔ Self-hosting (For Devs) 
+```sh
+# Install Git First (apt-instll git)
+$ git clone https://github.com/ZauteKm/GroupMusicBot
+$ cd GroupMusicBot
+# Upgrade sources
+# Install All Requirements 
+$ pip(3) install -r requirements.txt
+# Rename example.env to local.env and fill
+$ npm i -g npm
+# Start Bot 
+$ python(3) -m MusicBot
+```
+
+### Commands for Group 🛠
+#### For all in group
+
 - `/play <song name>` - play song you requested
-- `/audio` - Reply Audio/Mp3 or YT URL
+- `/play <reply to audio>` - play replied file
 - `/dplay <song name>` - play song you requested via deezer
 - `/splay <song name>` - play song you requested via jio saavn
 - `/playlist` - Show now playing list
@@ -80,7 +94,7 @@ Click the below button to watch the video tutorial on deploying
 - `/saavn <song name>` - download songs you want quickly via saavn
 - `/video <song name>` - download videos you want quickly
 
-#### Admins only.👮🏻‍♂️
+#### Admins only.
 - `/player` - open music player settings panel
 - `/pause` - pause song play
 - `/resume` - resume song play
@@ -88,11 +102,31 @@ Click the below button to watch the video tutorial on deploying
 - `/end` - stop music play
 - `/userbotjoin` - invite assistant to your chat
 - `/userbotleave` - remove assistant from your chat
-- `/reload` - Refresh admin list
+- `/admincache` - Refresh admin list
 
-# Support Group:
-<a href="https://t.me/MizoHelpDesK"><img src="https://img.shields.io/badge/Telegram-Join%20Telegram%20Group-blue.svg?logo=telegram"></a>
-# Support Channel:
-<a href="https://t.me/ZauTeKm"><img src="https://img.shields.io/badge/Telegram-Join%20Telegram%20Channel-red.svg?logo=telegram"></a>
-# Music Support Group:
-<a href="https://t.me/ZauteMusic"><img src="https://img.shields.io/badge/Telegram-Join%20Telegram%20Group-pink.svg?logo=telegram"></a>
+### Commands for Channel Music Play 🛠
+For linked group admins only:
+- `/cplay <song name>` - play song you requested
+- `/cplay <reply to audio>` - play replied file
+- `/cdplay <song name>` - play song you requested via deezer
+- `/csplay <song name>` - play song you requested via jio saavn
+- `/cplaylist` - Show now playing list
+- `/cccurrent` - Show now playing
+- `/cplayer` - open music player settings panel
+- `/cpause` - pause song play
+- `/cresume` - resume song play
+- `/cskip` - play next song
+- `/cend` - stop music play
+- `/userbotjoinchannel` - invite assistant to your chat
+* channel is also can be used instead of c
+
+If you donlt like to play in linked channel:
+ 1. Get your channel ID.
+ 2. Rename your group to: Channel Music: your_channel_id
+ 3. Add @ZK_GvCBot as Channel admin with full perms
+ 4. add helper to channel
+ 5. Simply send commands in your group.
+
+### Credits
+#### Special Credits
+- [Rojserbest](http://github.com/rojserbes): Callsmusic Developer
