@@ -23,7 +23,7 @@ Before clicking on deploy to heroku just click on fork and star just below
 
 <p align="center">
   <a href="https://github.com/ZauTeKm/GroupMusicBot/fork">
-    <img src="https://img.shields.io/github/forks/ZauTeKm/GroupMusicBot-v2?label=Fork&style=social">
+    <img src="https://img.shields.io/github/forks/ZauTeKm/GroupMusicBot?label=Fork&style=social">
     
   </a>
   <a href="https://github.com/ZauTeKm/GroupMusicBot">
