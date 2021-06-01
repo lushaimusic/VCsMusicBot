@@ -1,5 +1,5 @@
 {
-  "name": "Group Music Bot-v4",
+  "name": "Group Music Bot",
   "logo": "https://telegra.ph/file/b569577a0593b51cd53ab.png",
   "description": "Open-Source bot to play songs in your Telegram's Group Voice Chat. Powered by PyTgCalls.",
   "keywords": ["music", "voicechat", "telegram"],
@@ -19,7 +19,7 @@
       "required": true
     },
     "BOT_NAME": {
-      "description": "Your Music Player Bot Name.",
+      "description": "Your MusicPlayer Bot Name.",
       "required": false,
       "value": ""
     },
@@ -29,12 +29,12 @@
       "value": "tgVCSets"
     },
     "PROJECT_NAME": {
-      "description": "Your Music Player project Name.",
+      "description": "Your MusicPlayer project Name.",
       "required": false,
-      "value": "Group Music Bot v4"
+      "value": "Music Bot v4"
     },
     "ASSISTANT_NAME": {
-      "description": "Your Music Player's assistant Username without @.",
+      "description": "Your MusicPlayer's assistant Username without @.",
       "required": true
     },
     "ARQ_API_KEY": {
@@ -45,7 +45,7 @@
     "BG_IMAGE": {
       "description": "BG image of bot (Use transparent one) [IGNORE].",
       "required": false,
-      "value": "https://telegra.ph/file/0c26d3784bbcec0b3cf39.png"
+      "value": " https://telegra.ph/file/e8ef50ce40d228a5fde80.png"
     },     
     "UPDATES_CHANNEL": {
       "description": "Updates Channel without @ [Leave this if you don't have one].",
@@ -56,6 +56,11 @@
       "description": "App ID from my.telegram.org/apps",
       "required": true
     },
+    "PMPERMIT": {
+      "description": "Change to turn off",
+      "required": false,
+      "value": "ENABLE"
+    },    
     "API_HASH": {
       "description": "App hash from my.telegram.org/apps",
       "required": true
