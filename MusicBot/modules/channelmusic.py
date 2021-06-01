@@ -408,6 +408,7 @@ async def play(_, message: Message):
         )
         return
     message.from_user.id
+    text_links = None
     message.from_user.first_name
     await lel.edit("🔎 **Finding**")
     message.from_user.id
@@ -415,6 +416,21 @@ async def play(_, message: Message):
     message.from_user.first_name
     user_name = message.from_user.first_name
     rpk = "[" + user_name + "](tg://user?id=" + str(user_id) + ")"
+    if message.reply_to_message:
+        entities = []
+        toxt = message.reply_to_message.text or message.reply_to_message.caption
+        if message.reply_to_message.entities:
+            entities = message.reply_to_message.entities + entities
+        elif message.reply_to_message.caption_entities:
+            entities = message.reply_to_message.entities + entities
+        urls = [entity for entity in entities if entity.type == 'url']
+        text_links = [
+            entity for entity in entities if entity.type == 'text_link'
+        ]
+    else:
+        urls=None
+    if text_links:
+        urls = True    
     audio = (
         (message.reply_to_message.audio or message.reply_to_message.voice)
         if message.reply_to_message
@@ -436,17 +452,58 @@ async def play(_, message: Message):
         )
         file_name = get_file_name(audio)
         title = file_name
-        thumb_name = "https://telegra.ph/file/5b36bcfaa30ab6fb113b4.png"
+        thumb_name = "https://telegra.ph/file/40f01060df2beb75b94c1.png"
         thumbnail = thumb_name
         duration = round(audio.duration / 60)
         views = "Locally added"
         requested_by = message.from_user.first_name
         await generate_cover(requested_by, title, views, duration, thumbnail)
-        file_path = await converter.convert(
+        file_path = await convert(
             (await message.reply_to_message.download(file_name))
             if not path.isfile(path.join("downloads", file_name))
             else file_name
         )
+    elif urls:
+        query = toxt
+        await lel.edit("🎵 **Processing**")
+        ydl_opts = {"format": "bestaudio[ext=m4a]"}
+        try:
+            results = YoutubeSearch(query, max_results=1).to_dict()
+            url = f"https://youtube.com{results[0]['url_suffix']}"
+            # print(results)
+            title = results[0]["title"][:40]
+            thumbnail = results[0]["thumbnails"][0]
+            thumb_name = f"thumb{title}.jpg"
+            thumb = requests.get(thumbnail, allow_redirects=True)
+            open(thumb_name, "wb").write(thumb.content)
+            duration = results[0]["duration"]
+            results[0]["url_suffix"]
+            views = results[0]["views"]
+
+        except Exception as e:
+            await lel.edit(
+                "Song not found.Try another song or maybe spell it properly."
+            )
+            print(str(e))
+            return
+        dlurl = url
+        dlurl=dlurl.replace("youtube","youtubepp")
+        keyboard = InlineKeyboardMarkup(
+            [
+                [
+                    InlineKeyboardButton("📖 Playlist", callback_data="cplaylist"),
+                    InlineKeyboardButton("Menu ⏯ ", callback_data="cmenu"),
+                ],
+                [
+                    InlineKeyboardButton(text="🎬 YouTube", url=f"{url}"),
+                    InlineKeyboardButton(text="Download 📥", url=f"{dlurl}"),
+                ],
+                [InlineKeyboardButton(text="❌ Close", callback_data="ccls")],
+            ]
+        )
+        requested_by = message.from_user.first_name
+        await generate_cover(requested_by, title, views, duration, thumbnail)
+        file_path = await convert(youtube.download(url))        
     else:
         query = ""
         for i in message.command[1:]:
@@ -474,13 +531,18 @@ async def play(_, message: Message):
             print(str(e))
             return
 
+        dlurl = url
+        dlurl=dlurl.replace("youtube","youtubepp")
         keyboard = InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton("📖 Playlist", callback_data="cplaylist"),
                     InlineKeyboardButton("Menu ⏯ ", callback_data="cmenu"),
                 ],
-                [InlineKeyboardButton(text="Watch On YouTube 🎬", url=f"{url}")],
+                [
+                    InlineKeyboardButton(text="🎬 YouTube", url=f"{url}"),
+                    InlineKeyboardButton(text="Download 📥", url=f"{dlurl}"),
+                ],
                 [InlineKeyboardButton(text="❌ Close", callback_data="ccls")],
             ]
         )
@@ -676,7 +738,7 @@ async def jiosaavn(client: Client, message_: Message):
     try:
         user = await USER.get_me()
     except:
-        user.first_name = "MusicBot"
+        user.first_name = "DaisyMusic"
     usar = user
     wew = usar.id
     try:
@@ -734,7 +796,7 @@ async def jiosaavn(client: Client, message_: Message):
         sname = songs.result[0].song
         slink = songs.result[0].media_url
         ssingers = songs.result[0].singers
-        sthumb = songs.result[0].image
+        sthumb = "https://telegra.ph/file/40f01060df2beb75b94c1.png"
         sduration = int(songs.result[0].duration)
     except Exception as e:
         await res.edit("Found Literally Nothing!, You Should Work On Your English.")
