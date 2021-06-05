@@ -19,18 +19,18 @@
 Before clicking on deploy to heroku just click on fork and star just below
 
 <p align="center">
-  <a href="https://github.com/ZauTeKm/GroupMusicBot/fork">
-    <img src="https://img.shields.io/github/forks/ZauTeKm/GroupMusicBot?label=Fork&style=social">
+  <a href="https://github.com/InFoJosTel/GroupMusicBot/fork">
+    <img src="https://img.shields.io/github/forks/InFoJosTel/GroupMusicBot?label=Fork&style=social">
     
   </a>
-  <a href="https://github.com/ZauTeKm/GroupMusicBot">
-    <img src="https://img.shields.io/github/stars/ZauTeKm/GroupMusicBot?style=social">
+  <a href="https://github.com/InFoJosTel/GroupMusicBot">
+    <img src="https://img.shields.io/github/stars/InFoJosTel/GroupMusicBot?style=social">
   </a>
 </p>
 
 ### Deploy To Heroku 📡</h4>
 
-<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/ZauTeKm/GroupMusicBot"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-blueviolet?style=for-the-badge&logo=heroku" width="210" height="34.45"/></a></p>
+<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/InFoJosTel/GroupMusicBot"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-blueviolet?style=for-the-badge&logo=heroku" width="210" height="34.45"/></a></p>
 
 ###  GET STRING SESSION FROM REPL RUN
 
@@ -65,7 +65,7 @@ Click the below button to watch the video tutorial on deploying
 ### ⚔ Self-hosting (For Devs) 
 ```sh
 # Install Git First (apt-instll git)
-$ git clone https://github.com/ZauteKm/GroupMusicBot
+$ git clone https://github.com/InFoJosTel/GroupMusicBot
 $ cd GroupMusicBot
 # Upgrade sources
 # Install All Requirements 
