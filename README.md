@@ -1,4 +1,4 @@
-<h1 align="centre">GroupMusicBot 4.0</h1>
+<h1 align="centre">AnikhaMusicBot 4.0</h1>
 
 ### A bot that can play music on Telegram Group and Channel Voice Chats
 
@@ -9,8 +9,8 @@
 </p>
 
 <p align="center">
-  <a href="https://telegra.ph/file/b569577a0593b51cd53ab.png">
-     <img height="150px" src="https://telegra.ph/file/b569577a0593b51cd53ab.png">
+  <a href="https://telegra.ph/file/cda45ccb34e89453b954c.jpg">
+     <img height="150px" src="https://telegra.ph/file/323093472c5b467ab0b4e.jpg">
   </a>
 </p>
 
