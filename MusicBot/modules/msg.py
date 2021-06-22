@@ -7,9 +7,9 @@ class Messages():
 f"""
 **Hey 👋 Welcome back to {PROJECT_NAME}
 
-▷ {PROJECT_NAME} can play music in your group's voice chat as well as channel voice chats.
+⭕ {PROJECT_NAME} can play music in your group's voice chat as well as channel voice chats.
 
-▷ Assistant name >> @{ASSISTANT_NAME}\n\nClick next for instructions.**
+⭕ Assistant name >> @{ASSISTANT_NAME}\n\nClick next for instructions.**
 """,
 
 f"""
@@ -18,7 +18,7 @@ f"""
 1) Make bot admin (Group and in channel if use cplay)
 2) Start a voice chat
 3) Try /play [song name] for the first time by an admin
-*) If userbot joined enjoy music, If not add @{ASSISTANT_NAME} to your group and retry
+ If userbot joined enjoy music, If not add @{ASSISTANT_NAME} to your group and retry
 
 **For Channel Music Play**
 1) Make me admin of your channel 
@@ -51,7 +51,7 @@ f"""
 f"""
 **=>> Channel Music Play 👨‍🎤**
 
-⚪️ For linked group admins only:
+**⭕ For linked group admins only:**
 
 - /cplay [song name] - play song you requested
 - /cdplay [song name] - play song you requested via deezer
@@ -67,7 +67,7 @@ f"""
 
 channel is also can be used instead of c ( /cplay = /channelplay )
 
-▷ If you donlt like to play in linked group:
+**⭕ If you donlt like to play in linked group:**
 
 1) Get your channel ID.
 2) Create a group with tittle: Channel Music: your_channel_id
