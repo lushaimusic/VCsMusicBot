@@ -452,7 +452,7 @@ async def play(_, message: Message):
         )
         file_name = get_file_name(audio)
         title = file_name
-        thumb_name = "https://telegra.ph/file/40f01060df2beb75b94c1.png"
+        thumb_name = "https://telegra.ph/file/f6086f8909fbfeb0844f2.png"
         thumbnail = thumb_name
         duration = round(audio.duration / 60)
         views = "Locally added"
@@ -578,7 +578,7 @@ async def play(_, message: Message):
         await message.reply_photo(
             photo="final.png",
             reply_markup=keyboard,
-            caption="▶️ **Playing** the song requested by {} via Youtube Music 😜 in Linked Channel".format(
+            caption="▶️ **Playing** the song requested by {} via YouTube Music in Linked Channel".format(
                 message.from_user.mention()
             ),
         )
@@ -657,7 +657,7 @@ async def deezer(client: Client, message_: Message):
     queryy = text[1]
     query=queryy
     res = lel
-    await res.edit(f"Searching 👀👀👀 for `{queryy}` on deezer")
+    await res.edit(f"Searching 🔍 for `{queryy}` on deezer")
     try:
         songs = await arq.deezer(query,1)
         if not songs.ok:
@@ -694,9 +694,9 @@ async def deezer(client: Client, message_: Message):
         loc = file_path
         appendable = [s_name, r_by, loc]
         qeue.append(appendable)
-        await res.edit_text(f"✯{bn}✯= #️⃣ Queued at position {position}")
+        await res.edit_text(f"•{bn}•= #️⃣ Queued at position {position}")
     else:
-        await res.edit_text(f"✯{bn}✯=▶️ Playing.....")
+        await res.edit_text(f"•{bn}•=▶️ Playing.....")
 
         que[chat_id] = []
         qeue = que.get(chat_id)
@@ -787,7 +787,7 @@ async def jiosaavn(client: Client, message_: Message):
     text = message_.text.split(" ", 1)
     query = text[1]
     res = lel
-    await res.edit(f"Searching 👀👀👀 for `{query}` on jio saavn")
+    await res.edit(f"Searching 🔍 for `{query}` on jio saavn")
     try:
         songs = await arq.saavn(query)
         if not songs.ok:
@@ -796,7 +796,7 @@ async def jiosaavn(client: Client, message_: Message):
         sname = songs.result[0].song
         slink = songs.result[0].media_url
         ssingers = songs.result[0].singers
-        sthumb = "https://telegra.ph/file/40f01060df2beb75b94c1.png"
+        sthumb = "https://telegra.ph/file/b76e2f5813ff145881871.png"
         sduration = int(songs.result[0].duration)
     except Exception as e:
         await res.edit("Found Literally Nothing!, You Should Work On Your English.")
@@ -831,7 +831,7 @@ async def jiosaavn(client: Client, message_: Message):
             chat_id=message_.chat.id,
             reply_markup=keyboard,
             photo="final.png",
-            caption=f"✯{bn}✯=#️⃣ Queued at position {position}",
+            caption=f"•{bn}•=#️⃣ Queued at position {position}",
         )
 
     else:
