@@ -34,6 +34,7 @@ f"""
 - /play [reply audio]: Play replied audio
 - /dplay: Play song via deezer
 - /splay: Play song via jio saavn
+- /ytplay: Directly play song via YouTube Music
 
 **=>> Playback ⏯**
 
@@ -45,7 +46,7 @@ f"""
 - /current: Shows the current Playing track
 - /playlist: Shows playlist
 
-*Player cmd and all other cmds except /play, /current  and /playlist  are only for admins of the group.
+**Player cmd and all other cmds except /play, /current  and /playlist  are only for admins of the group.**
 """,
         
 f"""
@@ -65,7 +66,7 @@ f"""
 - /cend - stop music play
 - /userbotjoinchannel - invite assistant to your chat
 
-channel is also can be used instead of c ( /cplay = /channelplay )
+**Channel is also can be used instead of c** ( /cplay = /channelplay )
 
 **⭕ If you donlt like to play in linked group:**
 
@@ -79,6 +80,7 @@ channel is also can be used instead of c ( /cplay = /channelplay )
 f"""
 **=>> More tools 😬**
 
+- /musicplayer [on/off]: Enable/Disable Music player
 - /reload: Updates admin info of your group. Try if bot isn't recognize admin
 - /userbotjoin: Invite @{ASSISTANT_NAME} Userbot to your chat
 
