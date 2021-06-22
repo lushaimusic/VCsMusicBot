@@ -177,6 +177,9 @@ def r_ply(type_):
             [
                 InlineKeyboardButton("Playlist 📖", "playlist"),
             ],
+            [
+                InlineKeyboardButton("🔎 Search YouTube 🔍", switch_inline_query_current_chat=""),
+            ],
             [InlineKeyboardButton("❌ Close", "cls")],
         ]
     )
@@ -394,6 +397,9 @@ async def m_cb(b, cb):
                 [
                     InlineKeyboardButton("Playlist 📖", "playlist"),
                 ],
+                [
+                    InlineKeyboardButton("🔎 Search YouTube 🔍", switch_inline_query_current_chat=""),
+                ],
                 [InlineKeyboardButton("❌ Close", "cls")],
             ]
         )
@@ -529,6 +535,9 @@ async def play(_, message: Message):
                     InlineKeyboardButton("📖 Playlist", callback_data="playlist"),
                     InlineKeyboardButton("Menu ⏯ ", callback_data="menu"),
                 ],
+                [
+                    InlineKeyboardButton("🔎 Search YouTube 🔍", switch_inline_query_current_chat=""),
+                ],
                 [InlineKeyboardButton(text="❌ Close", callback_data="cls")],
             ]
         )
@@ -580,6 +589,9 @@ async def play(_, message: Message):
                     InlineKeyboardButton(text="🎬 YouTube", url=f"{url}"),
                     InlineKeyboardButton(text="Download 📥", url=f"{dlurl}"),
                 ],
+                [
+                    InlineKeyboardButton("🔎 Search YouTube 🔍", switch_inline_query_current_chat=""),
+                ],
                 [InlineKeyboardButton(text="❌ Close", callback_data="cls")],
             ]
         )
@@ -623,7 +635,10 @@ async def play(_, message: Message):
                         InlineKeyboardButton("4️⃣", callback_data=f'plll 3|{query}|{user_id}'),
                         InlineKeyboardButton("5️⃣", callback_data=f'plll 4|{query}|{user_id}'),
                     ],
-                    [InlineKeyboardButton(text="❌", callback_data="cls")],
+                    [
+                        InlineKeyboardButton("🔎 Search YouTube 🔍", switch_inline_query_current_chat=""),
+                    ],
+                    [InlineKeyboardButton(text="❌ Close", callback_data="cls")],
                 ]
             )       
             await lel.edit(toxxt,reply_markup=koyboard,disable_web_page_preview=True)
@@ -662,6 +677,9 @@ async def play(_, message: Message):
                     [
                         InlineKeyboardButton(text="🎬 YouTube", url=f"{url}"),
                         InlineKeyboardButton(text="Download 📥", url=f"{dlurl}"),
+                    ],
+                    [
+                        InlineKeyboardButton("🔎 Search YouTube 🔍", switch_inline_query_current_chat=""),
                     ],
                     [InlineKeyboardButton(text="❌ Close", callback_data="cls")],
                 ]
@@ -810,6 +828,9 @@ async def ytplay(_, message: Message):
             [
                 InlineKeyboardButton(text="🎬 YouTube", url=f"{url}"),
                 InlineKeyboardButton(text="Download 📥", url=f"{dlurl}"),
+            ],
+            [
+                InlineKeyboardButton("🔎 Search YouTube 🔍", switch_inline_query_current_chat=""),
             ],
             [InlineKeyboardButton(text="❌ Close", callback_data="cls")],
         ]
@@ -1091,6 +1112,9 @@ async def jiosaavn(client: Client, message_: Message):
                     text="Join Updates Channel", url=f"https://t.me/{updateschannel}"
                 )
             ],
+            [
+                InlineKeyboardButton("🔎 Search YouTube 🔍", switch_inline_query_current_chat=""),
+            ],
             [InlineKeyboardButton(text="❌ Close", callback_data="cls")],
         ]
     )
@@ -1195,6 +1219,9 @@ async def lol_cb(b, cb):
             [
                 InlineKeyboardButton(text="🎬 YouTube", url=f"{url}"),
                 InlineKeyboardButton(text="Download 📥", url=f"{dlurl}"),
+            ],
+            [
+                InlineKeyboardButton("🔎 Search YouTube 🔍", switch_inline_query_current_chat=""),
             ],
             [InlineKeyboardButton(text="❌ Close", callback_data="cls")],
         ]
