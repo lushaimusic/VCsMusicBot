@@ -55,6 +55,8 @@ Click the below button to watch the video tutorial on deploying
 - Control with buttons
 - Userbot auto join
 - Channel Music Play
+- Keyboard selection support for YouTube play
+
 ### Requirements 📝
 
 - FFmpeg
@@ -83,6 +85,7 @@ $ python(3) -m MusicBot
 - `/play <reply to audio>` - play replied file
 - `/dplay <song name>` - play song you requested via deezer
 - `/splay <song name>` - play song you requested via jio saavn
+- `/ytplay <song name>`: Directly play song via YouTube Music
 - `/playlist` - Show now playing list
 - `/current` - Show now playing
 - `/song <song name>` - download songs you want quickly
@@ -100,6 +103,7 @@ $ python(3) -m MusicBot
 - `/userbotjoin` - invite assistant to your chat
 - `/userbotleave` - remove assistant from your chat
 - `/reload` - Refresh admin list
+- `/musicplayer [on/off]` - Enable/Disable Music Player
 
 ### Commands for Channel Music Play 🛠
 For linked group admins only:
