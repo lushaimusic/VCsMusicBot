@@ -13,7 +13,7 @@ async def search(client, query):
         await client.answer_inline_query(
             query.id,
             results=answers,
-            switch_pm_text=("Search a youtube video"),
+            switch_pm_text=("Search a YouTube Videos"),
             switch_pm_parameter="help",
             cache_time=0
         )
@@ -29,7 +29,7 @@ async def search(client, query):
                         v["viewCount"]["short"]
                     ),
                     input_message_content=InputTextMessageContent(
-                        "/play https://www.youtube.com/watch?v={}".format(
+                        "/ytplay https://www.youtube.com/watch?v={}".format(
                             v["id"]
                         )
                     ),
