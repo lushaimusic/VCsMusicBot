@@ -1,7 +1,9 @@
-from pyrogram import Client, filters
+from pyrogram import Client
+from pyrogram import filters
 from pyrogram.errors import UserAlreadyParticipant
 import asyncio
 from MusicBot.config import SUDO_USERS
+
 
 @Client.on_message(filters.command(["gcast"]))
 async def bye(client, message):
@@ -13,13 +15,15 @@ async def bye(client, message):
             await lol.edit("Reply to any text message to gcast sir")
             return
         msg = message.reply_to_message.text
-        for dialog in client.iter_dialogs():
+        async for dialog in client.iter_dialogs():
             try:
                 await client.send_message(dialog.chat.id, msg)
                 sent = sent+1
                 await lol.edit(f"Gcasting.. Sent: {sent} chats. Failed: {failed} chats.")
+                await asyncio.sleep(3)
             except:
                 failed=failed+1
                 await lol.edit(f"Gcasting.. Sent: {sent} chats. Failed: {failed} chats.")
-            await asyncio.sleep(0.7)
+                await asyncio.sleep(0.7)
+                
         await message.reply_text(f"Gcasted message to {sent} chats. Failed {failed} chats.")
