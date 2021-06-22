@@ -32,12 +32,20 @@ def _start(client, message):
 @Client.on_message(filters.command("start") & ~filters.private & ~filters.channel)
 async def gstart(_, message: Message):
     await message.reply_text(
-        f"""**{PROJECT_NAME} is online**""",
+        f"""**{PROJECT_NAME} is online.**""",
         reply_markup=InlineKeyboardMarkup(
             [
                 [
                     InlineKeyboardButton(
                         "💬 Support Chat", url=f"https://t.me/{SUPPORT_GROUP}"
+                    )
+                ],    
+                [    
+                    InlineKeyboardButton(
+                        "🔎 Search YT", switch_inline_query_current_chat=""
+                    ),
+                    InlineKeyboardButton(
+                        "Close ❌", callback_data="close"
                     )
                 ]
             ]
