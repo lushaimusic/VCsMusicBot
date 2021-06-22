@@ -534,7 +534,7 @@ async def play(_, message: Message):
         )
         file_name = get_file_name(audio)
         title = file_name
-        thumb_name = "https://telegra.ph/file/b76e2f5813ff145881871.png"
+        thumb_name = "https://telegra.ph/file/006582d9816f098873cc9.png"
         thumbnail = thumb_name
         duration = round(audio.duration / 60)
         views = "Locally added"
@@ -702,7 +702,7 @@ async def play(_, message: Message):
         await message.reply_photo(
             photo="final.png",
             reply_markup=keyboard,
-            caption="▶️ **Playing** here the song requested by {} via YouTube Music".format(
+            caption="▶️ **Playing** here the song requested by {} via YouTube Music.".format(
                 message.from_user.mention()
             ),
         )
@@ -868,7 +868,7 @@ async def deezer(client: Client, message_: Message):
     try:
         user = await USER.get_me()
     except:
-        user.first_name = "DaisyMusic"
+        user.first_name = "MusicBot"
     usar = user
     wew = usar.id
     try:
@@ -931,7 +931,7 @@ async def deezer(client: Client, message_: Message):
         url = songs.result[0].url
         artist = songs.result[0].artist
         duration = songs.result[0].duration
-        thumbnail = "https://telegra.ph/file/b76e2f5813ff145881871.png"
+        thumbnail = "https://telegra.ph/file/f6086f8909fbfeb0844f2.png"
 
     except:
         await res.edit("Found Literally Nothing, You Should Work On Your English!")
@@ -1006,7 +1006,7 @@ async def jiosaavn(client: Client, message_: Message):
     try:
         user = await USER.get_me()
     except:
-        user.first_name = "DaisyMusic"
+        user.first_name = "MusicBot"
     usar = user
     wew = usar.id
     try:
@@ -1043,7 +1043,7 @@ async def jiosaavn(client: Client, message_: Message):
                     # print(e)
                     await lel.edit(
                         f"<b>🔴 Flood Wait Error 🔴 \nUser {user.first_name} couldn't join your group due to heavy requests for userbot! Make sure user is not banned in group."
-                        "\n\nOr manually add @ZauteMusicPlayer to your Group and try again</b>",
+                        "\n\nOr manually add @zauteMusicPlayer to your Group and try again</b>",
                     )
     try:
         await USER.get_chat(chid)
@@ -1149,13 +1149,13 @@ async def lol_cb(b, cb):
     try:
         x,query,useer_id = typed_.split("|")      
     except:
-        await cb.message.edit("Song Not Found")
+        await cb.message.edit("**Song Not Found**")
         return
     useer_id = int(useer_id)
     if cb.from_user.id != useer_id:
         await cb.answer("You ain't the person who requested to play the song!", show_alert=True)
         return
-    await cb.message.edit("Hang On... Player Starting")
+    await cb.message.edit("**Hang On... Player Starting**")
     x=int(x)
     try:
         useer_name = cb.message.reply_to_message.from_user.first_name
@@ -1238,7 +1238,7 @@ async def lol_cb(b, cb):
         await b.send_photo(chat_id,
             photo="final.png",
             reply_markup=keyboard,
-            caption=f"▶️ **Playing** here the song requested by {r_by.mention} via YouTube Music",
+            caption=f"▶️ **Playing** here the song requested by {r_by.mention} via YouTube Music.",
         )
         
         os.remove("final.png")
