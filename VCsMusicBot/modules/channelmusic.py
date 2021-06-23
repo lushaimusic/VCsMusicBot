@@ -20,7 +20,7 @@ from VCsMusicBot.modules.play import arq
 from VCsMusicBot.modules.play import cb_admin_check
 from VCsMusicBot.modules.play import transcode
 from VCsMusicBot.modules.play import convert_seconds
-from VcsMusicBot.modules.play import time_to_seconds
+from VCsMusicBot.modules.play import time_to_seconds
 from VCsMusicBot.modules.play import changeImageSize
 from VCsMusicBot.config import BOT_NAME as bn
 from VCsMusicBot.config import DURATION_LIMIT
