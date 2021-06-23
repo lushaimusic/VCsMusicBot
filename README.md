@@ -8,9 +8,11 @@
   </a>
 </p>
 
-<a href="https://telegra.ph/file/e8cc2e942567da80cab45.jpg">
-     <img height="150px" src="https://telegra.ph/file/e8cc2e942567da80cab45.jpg">
+<p align="center">
+  <a href="https://telegra.ph/file/e8cc2e942567da80cab45.jpg">
+     <img height="170px" src="https://telegra.ph/file/e8cc2e942567da80cab45.jpg">
   </a>
+</p>
 
 ## Give your 💙
 
