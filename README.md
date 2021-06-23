@@ -94,7 +94,7 @@ $ python3 -m VCsMusicBot
 - `/saavn <song name>` - download songs you want quickly via saavn
 - `/video <song name>` - download videos you want quickly
 
-#### Admins only 🏅
+### Admins only 🏅
 - `/player` - open music player settings panel
 - `/pause` - pause song play
 - `/resume` - resume song play
@@ -105,8 +105,8 @@ $ python3 -m VCsMusicBot
 - `/reload` - Refresh admin list
 - `/musicplayer [on/off]` - Enable/Disable Music Player
 
-### Commands for Channel Music Play 👨‍🎤
-For linked group admins only:
+### Channel Music Play 👨‍🎤
+*For linked group admins only:*
 - `/cplay <song name>` - play song you requested
 - `/cplay <reply to audio>` - play replied file
 - `/cdplay <song name>` - play song you requested via deezer
@@ -133,11 +133,12 @@ If you donlt like to play in linked channel:
 - `/gcast <reply to message>` - globally brodcast replied message to all chats
 - `/pmpermit [on/off]` - enable/disable pmpermit message
 
-#### Pmpermit
+### PMpermit
 - `.a` - approove someone to pm you
 - `.da` - disapproove someone to pm you
 + Sudo Users can execute any command in any groups
 
 ### Credits
 #### Special Credits
+- [Zaute-Km](GitHub.com/Zaute-Km): LushaiMusic Developer
 - [Rojserbest](http://github.com/rojserbest): Callsmusic Developer
