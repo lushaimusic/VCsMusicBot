@@ -1,13 +1,13 @@
 from asyncio.queues import QueueEmpty
-from MusicBot.config import que
+from VCsMusicBot.config import que
 from pyrogram import Client, filters
 from pyrogram.types import Message
 
-from MusicBot.function.admins import set
-from MusicBot.helpers.channelmusic import get_chat_id
-from MusicBot.helpers.decorators import authorized_users_only, errors
-from MusicBot.helpers.filters import command, other_filters
-from MusicBot.services.callsmusic import callsmusic
+from VCsMusicBot.function.admins import set
+from VCsMusicBot.helpers.channelmusic import get_chat_id
+from VCsMusicBot.helpers.decorators import authorized_users_only, errors
+from VCsMusicBot.helpers.filters import command, other_filters
+from VCsMusicBot.services.callsmusic import callsmusic
 
 
 @Client.on_message(filters.command("reload"))
