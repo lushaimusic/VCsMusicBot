@@ -15,29 +15,29 @@ from pyrogram.types import Voice
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 from Python_ARQ import ARQ
 from youtube_search import YoutubeSearch
-from MusicBot.modules.play import generate_cover
-from MusicBot.modules.play import arq
-from MusicBot.modules.play import cb_admin_check
-from MusicBot.modules.play import transcode
-from MusicBot.modules.play import convert_seconds
-from MusicBot.modules.play import time_to_seconds
-from MusicBot.modules.play import changeImageSize
-from MusicBot.config import BOT_NAME as bn
-from MusicBot.config import DURATION_LIMIT
-from MusicBot.config import UPDATES_CHANNEL as updateschannel
-from MusicBot.config import que
-from MusicBot.function.admins import admins as a
-from MusicBot.helpers.errors import DurationLimitError
-from MusicBot.helpers.decorators import errors
-from MusicBot.helpers.admins import get_administrators
-from MusicBot.helpers.channelmusic import get_chat_id
-from MusicBot.helpers.decorators import authorized_users_only
-from MusicBot.helpers.filters import command, other_filters
-from MusicBot.helpers.gets import get_file_name
-from MusicBot.services.callsmusic import callsmusic, queues
-from MusicBot.services.callsmusic.callsmusic import client as USER
-from MusicBot.services.converter.converter import convert
-from MusicBot.services.downloaders import youtube
+from VCsMusicBot.modules.play import generate_cover
+from VCsMusicBot.modules.play import arq
+from VCsMusicBot.modules.play import cb_admin_check
+from VCsMusicBot.modules.play import transcode
+from VCsMusicBot.modules.play import convert_seconds
+from VcsMusicBot.modules.play import time_to_seconds
+from VCsMusicBot.modules.play import changeImageSize
+from VCsMusicBot.config import BOT_NAME as bn
+from VCsMusicBot.config import DURATION_LIMIT
+from VCsMusicBot.config import UPDATES_CHANNEL as updateschannel
+from VCsMusicBot.config import que
+from VCsMusicBot.function.admins import admins as a
+from VCsMusicBot.helpers.errors import DurationLimitError
+from VCsMusicBot.helpers.decorators import errors
+from VcsMusicBot.helpers.admins import get_administrators
+from VCsMusicBot.helpers.channelmusic import get_chat_id
+from VCsMusicBot.helpers.decorators import authorized_users_only
+from VCsMusicBot.helpers.filters import command, other_filters
+from VCsMusicBot.helpers.gets import get_file_name
+from VCsMusicBot.services.callsmusic import callsmusic, queues
+from VCsMusicBot.services.callsmusic.callsmusic import client as USER
+from VCsMusicBot.services.converter.converter import convert
+from VCsMusicBot.services.downloaders import youtube
 
 chat_id = None
 
@@ -772,7 +772,7 @@ async def jiosaavn(client: Client, message_: Message):
                     # print(e)
                     await lel.edit(
                         f"<b>🔴 Flood Wait Error 🔴 \nUser {user.first_name} couldn't join your channel due to heavy requests for userbot! Make sure user is not banned in group."
-                        "\n\nOr manually add @ZauteMusicPlayer to your Group and try again</b>",
+                        "\n\nOr manually add @VCsMusicPlayer to your Group and try again</b>",
                     )
     try:
         await USER.get_chat(chid)
