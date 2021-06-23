@@ -9,7 +9,7 @@ f"""
 
 ⭕ I can play music in your group's voice chat as well as channel voice chats.
 
-⭕ Assistant name: @{ASSISTANT_NAME}\n\nClick next for instructions.**
+⭕ Assistant: @{ASSISTANT_NAME}\n\nClick Next ➡️ for instructions.**
 """,
 
 f"""
@@ -17,7 +17,7 @@ f"""
 
 1) Make bot admin (Group and in channel if use cplay)
 2) Start a voice chat
-3) Try /play `[song name]` for the first time by an admin
+3) Try /play `<song name>` for the first time by an admin
  If userbot joined enjoy music, If not add @{ASSISTANT_NAME} to your group and retry.
 
 **For Channel Music Play**
@@ -29,8 +29,8 @@ f"""
 
 **=>> Song Playing 🎧**
 
-- /play `[song name]`: Select the Given Below Keyboard.
-- /play `[yt url]` : Play the given YouTube URL.
+- /play `<song name>`: Select the Given Below Keyboard.
+- /play `<yt url>` : Play the given YouTube URL.
 - /ytplay: Directly play song via YouTube Music.
 - /dplay: Play song via deezer.
 - /splay: Play song via jio saavn.
@@ -53,9 +53,9 @@ f"""
 
 **⭕ For linked group admins only:**
 
-- /cplay `[song name]`: Play song you requested.
-- /cdplay `[song name]`: Play song you requested via deezer.
-- /csplay `[song name]`: Play song you requested via jio saavn.
+- /cplay `<song name>`: Play song you requested.
+- /cdplay `<song name>`: Play song you requested via deezer.
+- /csplay `<song name>`: Play song you requested via jio saavn.
 - /cplaylist: Show now playing list.
 - /cccurrent: Show now playing.
 - /cplayer: Open music player settings panel.
