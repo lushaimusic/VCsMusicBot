@@ -2,8 +2,8 @@ from os import path
 
 from youtube_dl import YoutubeDL
 
-from MusicBot.config import DURATION_LIMIT
-from MusicBot.helpers.errors import DurationLimitError
+from VCsMusicBot.config import DURATION_LIMIT
+from VCsMusicBot.helpers.errors import DurationLimitError
 
 ydl_opts = {
     "format": "bestaudio[ext=m4a]",
