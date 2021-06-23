@@ -2,7 +2,7 @@ from typing import List, Union
 
 from pyrogram import filters
 
-from MusicBot.config import COMMAND_PREFIXES
+from VCsMusicBot.config import COMMAND_PREFIXES
 
 other_filters = filters.group & ~filters.edited & ~filters.via_bot & ~filters.forwarded
 other_filters2 = (
