@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  <a href="https://telegra.ph/file/5a24274c6a6455f9a8d8f.png">
+  <a href="https://telegra.ph/file/e8cc2e942567da80cab45.jpg">
      <img height="150px" src="https://telegra.ph/file/5a24274c6a6455f9a8d8f.png">
   </a>
 </p>
