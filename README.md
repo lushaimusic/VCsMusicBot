@@ -43,7 +43,7 @@ Click the below button to watch the video tutorial on deploying
 
  [![Run on Repl.it](https://camo.githubusercontent.com/05149b448485553c6f14f6430a45c12dcc79ed3c/68747470733a2f2f7265706c2e69742f62616467652f6769746875622f6a61727669733231303930342f4a6172766973)](https://replit.com/@ZauteKm/GenerateStringSession#main.py)
 
-### Deploy to VPS
+### Deploy to VPS 🏃
 ```sh
 # Install Git First (apt-instll git)
 $ git clone https://github.com/LushaiMusic/VCsMusicBot
@@ -54,10 +54,10 @@ $ pip(3) install -r requirements.txt
 # Rename example.env to local.env and fill
 $ npm i -g npm
 # Start Bot 
-$ python(3) -m VCsMusicBot
+$ python3 -m VCsMusicBot
 ```
 
-### Features✨
+### Features ✅
 
 - Thumbnail Support
 - Playlist Support
@@ -78,7 +78,7 @@ $ python(3) -m VCsMusicBot
 - Python 3.7+
 - [PyTgCalls](https://github.com/pytgcalls/pytgcalls)
 
-### Commands for Group 🛠
+### Commands for Group 👥
 #### For all in group
 
 - `/play <song name>` - play song you requested
@@ -94,7 +94,7 @@ $ python(3) -m VCsMusicBot
 - `/saavn <song name>` - download songs you want quickly via saavn
 - `/video <song name>` - download videos you want quickly
 
-#### Admins only.
+#### Admins only 🏅
 - `/player` - open music player settings panel
 - `/pause` - pause song play
 - `/resume` - resume song play
@@ -105,7 +105,7 @@ $ python(3) -m VCsMusicBot
 - `/reload` - Refresh admin list
 - `/musicplayer [on/off]` - Enable/Disable Music Player
 
-### Commands for Channel Music Play 🛠
+### Commands for Channel Music Play 👨‍🎤
 For linked group admins only:
 - `/cplay <song name>` - play song you requested
 - `/cplay <reply to audio>` - play replied file
@@ -124,11 +124,11 @@ For linked group admins only:
 If you donlt like to play in linked channel:
  1. Get your channel ID.
  2. Rename your group to: Channel Music: your_channel_id
- 3. Add @ZK_GvCBot as Channel admin with full perms
+ 3. Add [@VCsMusicPlayer](t.me/VCsMusicPlayer) as Channel admin with full perms
  4. add helper to channel
  5. Simply send commands in your group.
 
-### Commands for Sudo Users ⚔️
+### Commands for Sudo Users 👮
 - `/userbotleaveall` - remove assistant from all chats
 - `/gcast <reply to message>` - globally brodcast replied message to all chats
 - `/pmpermit [on/off]` - enable/disable pmpermit message
@@ -140,4 +140,4 @@ If you donlt like to play in linked channel:
 
 ### Credits
 #### Special Credits
-- [Rojserbest](http://github.com/rojserbes): Callsmusic Developer
+- [Rojserbest](http://github.com/rojserbest): Callsmusic Developer
