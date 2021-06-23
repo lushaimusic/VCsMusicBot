@@ -1,9 +1,9 @@
 from pyrogram import Client
 import asyncio
-from MusicBot.config import SUDO_USERS, PMPERMIT
+from VCsMusicBot.config import SUDO_USERS, PMPERMIT
 from pyrogram import filters
 from pyrogram.types import Message
-from MusicBot.services.callsmusic.callsmusic import client as USER
+from VCsMusicBot.services.callsmusic.callsmusic import client as USER
 
 PMSET =True
 pchats = []
@@ -17,7 +17,7 @@ async def pmPermit(client: USER, message: Message):
                 return
             await USER.send_message(
                 message.chat.id,
-                "Hi there, This is a music assistant service of @vcGroupMusicBot.\n\n ❗️ Rules:\n   - No chatting allowed\n   - No spam allowed \n\n 👉 **SEND GROUP INVITE LINK OR USERNAME IF USERBOT CAN'T JOIN YOUR GROUP.**\n\n ⚠️ Disclamer: If you are sending a message here it means admin from @zautesChat will see your message and join chat.\n    - Don't add this user to secret groups.\n   - Don't Share private info here.\n\n**Feel Free to Contact Us @ZauteBot.\n\nDeploy your own Bot from** https://github.com/LushaiMusic/GroupMusicBot",
+                "Hi there, This is a music assistant service of @VCsMusicBot.\n\n ❗️ Rules:\n   - No chatting allowed\n   - No spam allowed \n\n 👉 **SEND GROUP INVITE LINK OR USERNAME IF USERBOT CAN'T JOIN YOUR GROUP.**\n\n ⚠️ Disclamer: If you are sending a message here it means admin from @zautesChat will see your message and join chat.\n    - Don't add this user to secret groups.\n   - Don't Share private info here.\n\n**Feel Free to Contact Us @ZauteBot.\n\nDeploy your own Bot from** https://github.com/LushaiMusic/VCsMusicBot",
             )
             return
 
