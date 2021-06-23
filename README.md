@@ -1,16 +1,16 @@
-<h1 align="centre">GroupMusicBot 4.0</h1>
+<h1 align="centre">VCsMusicBot v4.0</h1>
 
 ### A bot that can play music on Telegram Group and Channel Voice Chats
 
 <p align="center">
-  <a href="https://github.com/LushaiMusic/GroupMusicBot">
+  <a href="https://github.com/LushaiMusic/VCsMusicBot">
      <img height="30px" src="https://img.shields.io/badge/Group%20Music%20Bot-red?style=for-the-badge&logo=github">
   </a>
 </p>
 
 <p align="center">
-  <a href="https://telegra.ph/file/b569577a0593b51cd53ab.png">
-     <img height="150px" src="https://telegra.ph/file/b569577a0593b51cd53ab.png">
+  <a href="https://telegra.ph/file/5a24274c6a6455f9a8d8f.png">
+     <img height="150px" src="https://telegra.ph/file/5a24274c6a6455f9a8d8f.png">
   </a>
 </p>
 
@@ -19,12 +19,12 @@
 Before clicking on deploy to heroku just click on fork and star just below
 
 <p align="center">
-  <a href="https://github.com/LushaiMusic/GroupMusicBot/fork">
-    <img src="https://img.shields.io/github/forks/LushaiMusic/GroupMusicBot?label=Fork&style=social">
+  <a href="https://github.com/LushaiMusic/VCsMusicBot/fork">
+    <img src="https://img.shields.io/github/forks/LushaiMusic/VCsMusicBot?label=Fork&style=social">
     
   </a>
   <a href="https://github.com/LushaiMusic/GroupMusicBot">
-    <img src="https://img.shields.io/github/stars/LushaiMusic/GroupMusicBot?style=social">
+    <img src="https://img.shields.io/github/stars/LushaiMusic/VCsMusicBot?style=social">
   </a>
 </p>
 
@@ -37,11 +37,25 @@ Click the below button to watch the video tutorial on deploying
 
 ### Deploy To Heroku 📡</h4>
 
-<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/LushaiMusic/GroupMusicBot"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-blueviolet?style=for-the-badge&logo=heroku" width="210" height="34.45"/></a></p>
+<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/LushaiMusic/VCsMusicBot"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-blueviolet?style=for-the-badge&logo=heroku" width="210" height="34.45"/></a></p>
 
 ###  GET STRING SESSION FROM REPL RUN
 
  [![Run on Repl.it](https://camo.githubusercontent.com/05149b448485553c6f14f6430a45c12dcc79ed3c/68747470733a2f2f7265706c2e69742f62616467652f6769746875622f6a61727669733231303930342f4a6172766973)](https://replit.com/@ZauteKm/GenerateStringSession#main.py)
+
+### Deploy to VPS
+```sh
+# Install Git First (apt-instll git)
+$ git clone https://github.com/LushaiMusic/VCsMusicBot
+$ cd VCsMusicBot
+# Upgrade sources
+# Install All Requirements 
+$ pip(3) install -r requirements.txt
+# Rename example.env to local.env and fill
+$ npm i -g npm
+# Start Bot 
+$ python(3) -m VCsMusicBot
+```
 
 ### Features✨
 
@@ -63,20 +77,6 @@ Click the below button to watch the video tutorial on deploying
 - NodeJS [nodesource.com](https://nodesource.com/)
 - Python 3.7+
 - [PyTgCalls](https://github.com/pytgcalls/pytgcalls)
-
-### ⚔ Self-hosting (For Devs) 
-```sh
-# Install Git First (apt-instll git)
-$ git clone https://github.com/LushaiMusic/GroupMusicBot
-$ cd GroupMusicBot
-# Upgrade sources
-# Install All Requirements 
-$ pip(3) install -r requirements.txt
-# Rename example.env to local.env and fill
-$ npm i -g npm
-# Start Bot 
-$ python(3) -m MusicBot
-```
 
 ### Commands for Group 🛠
 #### For all in group
