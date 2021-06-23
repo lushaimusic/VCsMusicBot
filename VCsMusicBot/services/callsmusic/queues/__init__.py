@@ -1,4 +1,4 @@
-from MusicBot.services.callsmusic.queues.queues import (
+from VCsMusicBot.services.callsmusic.queues.queues import (
     clear,
     get,
     is_empty,
