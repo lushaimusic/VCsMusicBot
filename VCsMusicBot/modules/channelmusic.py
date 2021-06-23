@@ -29,7 +29,7 @@ from VCsMusicBot.config import que
 from VCsMusicBot.function.admins import admins as a
 from VCsMusicBot.helpers.errors import DurationLimitError
 from VCsMusicBot.helpers.decorators import errors
-from VcsMusicBot.helpers.admins import get_administrators
+from VCsMusicBot.helpers.admins import get_administrators
 from VCsMusicBot.helpers.channelmusic import get_chat_id
 from VCsMusicBot.helpers.decorators import authorized_users_only
 from VCsMusicBot.helpers.filters import command, other_filters
