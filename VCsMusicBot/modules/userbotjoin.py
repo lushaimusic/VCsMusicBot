@@ -1,9 +1,9 @@
 from pyrogram import Client, filters
 from pyrogram.errors import UserAlreadyParticipant
 import asyncio
-from MusicBot.helpers.decorators import authorized_users_only, errors
-from MusicBot.services.callsmusic.callsmusic import client as USER
-from MusicBot.config import SUDO_USERS
+from VCsMusicBot.helpers.decorators import authorized_users_only, errors
+from VCsMusicBot.services.callsmusic.callsmusic import client as USER
+from VCsMusicBot.config import SUDO_USERS
 
 @Client.on_message(filters.command(["userbotjoin"]) & ~filters.private & ~filters.bot)
 @authorized_users_only
@@ -34,7 +34,7 @@ async def addchannel(client, message):
         print(e)
         await message.reply_text(
             f"<b>🛑 Flood Wait Error 🛑 \n User {user.first_name} couldn't join your group due to heavy join requests for userbot! Make sure user is not banned in group."
-            "\n\nOr manually add @ZauteMusicPlayer to your Group and try again</b>",
+            "\n\nOr manually add @VCsMusicPlayer to your Group and try again</b>",
         )
         return
     await message.reply_text(
@@ -109,7 +109,7 @@ async def addcchannel(client, message):
         print(e)
         await message.reply_text(
             f"<b>🛑 Flood Wait Error 🛑 \n User {user.first_name} couldn't join your channel due to heavy join requests for userbot! Make sure user is not banned in channel."
-            "\n\nOr manually add @ZauteMusicPlayer to your Group and try again</b>",
+            "\n\nOr manually add @VCsMusicPlayer to your Group and try again</b>",
         )
         return
     await message.reply_text(
