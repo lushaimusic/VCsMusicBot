@@ -1,1 +1,3 @@
-from VCsMusicBot.services.downloaders.youtube import download
+from VCsMusicBot.services.downloaders import youtube
+
+__all__ = ["youtube"]
