@@ -7,7 +7,7 @@ from VCsMusicBot.function.admins import set
 from VCsMusicBot.helpers.channelmusic import get_chat_id
 from VCsMusicBot.helpers.decorators import authorized_users_only, errors
 from VCsMusicBot.helpers.filters import command, other_filters
-from VCsMusicBot.services.callsmusic import callsmusic
+from VCsMusicBot.services.queues import queues
 
 
 
