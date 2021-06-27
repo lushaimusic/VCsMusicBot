@@ -1,5 +1,4 @@
 import json
-import os
 from os import path
 from typing import Callable
 
@@ -8,8 +7,11 @@ import aiohttp
 import ffmpeg
 import requests
 import wget
-from PIL import Image, ImageDraw, ImageFont
-from pyrogram import Client, filters
+from PIL import Image
+from PIL import ImageDraw
+from PIL import ImageFont
+from pyrogram import Client 
+from pyrogram import filters
 from pyrogram.errors import UserAlreadyParticipant
 from pyrogram.types import Voice
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
@@ -32,12 +34,14 @@ from VCsMusicBot.helpers.decorators import errors
 from VCsMusicBot.helpers.admins import get_administrators
 from VCsMusicBot.helpers.channelmusic import get_chat_id
 from VCsMusicBot.helpers.decorators import authorized_users_only
-from VCsMusicBot.helpers.filters import command, other_filters
+from VCsMusicBot.helpers.filters import command
+from VCsMusicBot.helpers.filters import other_filters
 from VCsMusicBot.helpers.gets import get_file_name
-from VCsMusicBot.services.callsmusic import callsmusic, queues
-from VCsMusicBot.services.callsmusic.callsmusic import client as USER
+from VCsMusicBot.services.callsmusic import callsmusic
+from VCsMusicBot.services.callsmusic import client as USER
 from VCsMusicBot.services.converter.converter import convert
 from VCsMusicBot.services.downloaders import youtube
+from VCsMusicBot.services.queues import queues
 
 chat_id = None
 
