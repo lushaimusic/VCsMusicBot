@@ -1,8 +1,8 @@
+local.env
+*.log
+venv/
+.idea/
 *.session
-*.session-journal
-.env
-__pycache__
-.idea
-.vscode
-raw_files
-downloads
+raw_files/
+downloads/
+__pycache__/
