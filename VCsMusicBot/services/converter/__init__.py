@@ -1,6 +1,9 @@
-from os import listdir, mkdir
+from os import listdir
+from os import mkdir
 
-if "raw_files" not in listdir():
-    mkdir("raw_files")
+if 'raw_files' not in listdir():
+    mkdir('raw_files')
 
 from VCsMusicBot.services.converter.converter import convert
+
+__all__ = ["convert"]
