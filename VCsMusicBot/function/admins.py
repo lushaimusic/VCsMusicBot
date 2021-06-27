@@ -1,4 +1,6 @@
-from typing import Dict, List, Union
+from typing import Dict
+from typing import List
+from typing import Union
 
 admins: Dict[int, List[int]] = {}
 
