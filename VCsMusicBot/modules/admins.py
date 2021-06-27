@@ -1,16 +1,20 @@
-from asyncio.queues import QueueEmpty
-from VCsMusicBot.config import que
-from pyrogram import Client, filters
+from asyncio import QueueEmpty
+from pyrogram import Client 
+from pyrogram import filters
 from pyrogram.types import Message
 
+from VCsMusicBot.config import que
 from VCsMusicBot.function.admins import set
 from VCsMusicBot.helpers.channelmusic import get_chat_id
-from VCsMusicBot.helpers.decorators import authorized_users_only, errors
-from VCsMusicBot.helpers.filters import command, other_filters
+from VCsMusicBot.helpers.decorators import authorized_users_only
+from VCsMusicBot.helpers.decorators import errors
+from VCsMusicBot.helpers.filters import command
+from VCsMusicBot.helpers.filters import other_filters
 from VCsMusicBot.services.callsmusic import callsmusic
+from VCsMusicBot.services.queues import queues
 
 
-@Client.on_message(filters.command("reload"))
+@Client.on_message(filters.command("adminreset"))
 async def update_admin(client, message: Message):
     chat_id = get_chat_id(message.chat)
     set(
@@ -28,12 +32,12 @@ async def update_admin(client, message: Message):
 @authorized_users_only
 async def pause(_, message: Message):
     chat_id = get_chat_id(message.chat)
-    if (chat_id not in callsmusic.pytgcalls.active_calls) or (
-        callsmusic.pytgcalls.active_calls[chat_id] == "paused"
+    if (chat_id not in callsmusic.active_chats) or (
+        callsmusic.active_chats[chat_id] == "paused"
     ):
         await message.reply_text("❗ Nothing is playing!")
     else:
-        callsmusic.pytgcalls.pause_stream(chat_id)
+        callsmusic.pause(chat_id)
         await message.reply_text("▶️ Paused!")
 
 
@@ -42,12 +46,12 @@ async def pause(_, message: Message):
 @authorized_users_only
 async def resume(_, message: Message):
     chat_id = get_chat_id(message.chat)
-    if (chat_id not in callsmusic.pytgcalls.active_calls) or (
-        callsmusic.pytgcalls.active_calls[chat_id] == "playing"
+    if (chat_id not in callsmusic.active_chats) or (
+        callsmusic.active_chats[chat_id] == "playing"
     ):
         await message.reply_text("❗ Nothing is paused!")
     else:
-        callsmusic.pytgcalls.resume_stream(chat_id)
+        callsmusic.resume(chat_id)
         await message.reply_text("⏸ Resumed!")
 
 
@@ -56,15 +60,15 @@ async def resume(_, message: Message):
 @authorized_users_only
 async def stop(_, message: Message):
     chat_id = get_chat_id(message.chat)
-    if chat_id not in callsmusic.pytgcalls.active_calls:
+    if chat_id not in callsmusic.active_chats:
         await message.reply_text("❗ Nothing is streaming!")
     else:
         try:
-            callsmusic.queues.clear(chat_id)
+            queues.clear(chat_id)
         except QueueEmpty:
             pass
 
-        callsmusic.pytgcalls.leave_group_call(chat_id)
+        await callsmusic.stop(chat_id)
         await message.reply_text("❌ Stopped streaming!")
 
 
@@ -74,16 +78,16 @@ async def stop(_, message: Message):
 async def skip(_, message: Message):
     global que
     chat_id = get_chat_id(message.chat)
-    if chat_id not in callsmusic.pytgcalls.active_calls:
+    if chat_id not in callsmusic.active_chats:
         await message.reply_text("❗ Nothing is playing to skip!")
     else:
-        callsmusic.queues.task_done(chat_id)
-
-        if callsmusic.queues.is_empty(chat_id):
-            callsmusic.pytgcalls.leave_group_call(chat_id)
+        queues.task_done(chat_id)
+        if queues.is_empty(chat_id):
+            await callsmusic.stop(chat_id)
         else:
-            callsmusic.pytgcalls.change_stream(
-                chat_id, callsmusic.queues.get(chat_id)["file"]
+            await callsmusic.set_stream(
+                chat_id, 
+                queues.get(chat_id)["file"]
             )
 
     qeue = que.get(chat_id)
