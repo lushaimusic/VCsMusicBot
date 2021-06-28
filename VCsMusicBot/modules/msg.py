@@ -82,13 +82,24 @@ f"""
 - /musicplayer <on/off> : Enable/Disable Music player
 - /reload: Updates admin info of your group. Try if bot isn't recognize admin
 - /userbotjoin: Invite @{ASSISTANT_NAME} Userbot to your chat
+""",
+f"""
+**=>> Song/Vid Download 📥**
+- /video [song mame]: Download video song from youtube
+- /song [song name]: Download audio song from youtube
+- /saavn [song name]: Download song from saavn
+- /deezer [song name]: Download song from deezer
 
-**=>> Commands for Sudo Users 👷**
+**=>> Search Tools 🔍**
+- /search [song name]: Search youtube for songs
+- /lyrics [song name]: Get song lyrics
+""",
 
- - /userbotleaveall: Remove assistant from all chats.
- - /gcast <reply to message>: Globally brodcast replied message to all chats.
- - /pmpermit <on/off>: Enable/Disable PM Permit message.
-**Sudo Users can execute any command in any groups.**
-
+f"""
+**=>> Commands for Sudo Users 👮**
+ - /userbotleaveall - remove assistant from all chats
+ - /broadcast <reply to message> - globally brodcast replied message to all chats
+ - /pmpermit [on/off] - enable/disable pmpermit message
+*Sudo Users can execute any command in any groups
 """
       ]
