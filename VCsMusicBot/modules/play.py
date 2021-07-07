@@ -498,8 +498,11 @@ async def play(_, message: Message):
     text_links=None
     await lel.edit("🔎 <b>Finding</b>")
     if message.reply_to_message:
+        if message.reply_to_message.audio:
+            pass
         entities = []
-        toxt = message.reply_to_message.text or message.reply_to_message.caption
+        toxt = message.reply_to_message.text \
+              or message.reply_to_message.caption
         if message.reply_to_message.entities:
             entities = message.reply_to_message.entities + entities
         elif message.reply_to_message.caption_entities:
@@ -725,7 +728,7 @@ async def play(_, message: Message):
         await message.reply_photo(
             photo="final.png",
             reply_markup=keyboard,
-            caption="▶️ <b>Playing</b> here the song requested by {} via Youtube Music 😎".format(
+            caption="▶️ <b>Playing</b> here the song requested by {} via YouTube Music".format(
                 message.from_user.mention()
             ),
         )
@@ -883,7 +886,7 @@ async def ytplay(_, message: Message):
         await message.reply_photo(
             photo="final.png",
             reply_markup=keyboard,
-            caption="▶️ <b>Playing</b> here the song requested by {} via YouTube Music.".format(
+            caption="▶️ <b>Playing</b> here the song requested by {} via YouTube Music".format(
                 message.from_user.mention()
             ),
         )
@@ -1274,7 +1277,7 @@ async def lol_cb(b, cb):
         await b.send_photo(chat_id,
             photo="final.png",
             reply_markup=keyboard,
-            caption=f"▶️ <b>Playing</b> here the song requested by {r_by.mention} via YouTube Music.",
+            caption=f"▶️ <b>Playing</b> here the song requested by {r_by.mention} via YouTube Music",
         )
         
         os.remove("final.png")
