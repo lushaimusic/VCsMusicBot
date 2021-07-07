@@ -1,4 +1,4 @@
-<h1 align="centre">VCsMusicBot v4.0</h1>
+<h1 align="centre">VCsMusicBot v5.0</h1>
 
 ### A bot that can play music on Telegram Group and Channel Voice Chats
 
@@ -68,13 +68,6 @@ $ python3 -m VCsMusicBot
 - Userbot auto join
 - Channel Music Play
 - Keyboard selection support for YouTube play
-
-### Requirements 📝
-
-- FFmpeg
-- NodeJS [nodesource.com](https://nodesource.com/)
-- Python 3.7+
-- [PyTgCalls](https://github.com/pytgcalls/pytgcalls)
 
 ### Commands for Group 👥
 #### For all in group
