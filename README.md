@@ -27,13 +27,7 @@ Before clicking on deploy to heroku just click on fork and star just below
     <img src="https://img.shields.io/github/stars/LushaiMusic/VCsMusicBot?style=social">
   </a>
 </p>
-
-## How to deploy 
-
-Click the below button to watch the video tutorial on deploying
-
-<a href="https://youtu.be/koAzUgNQaDU"><img src="https://img.shields.io/badge/How%20To%20Deploy-blue.svg?logo=Youtube"></a>
-<a href="https://youtu.be/koAzUgNQaDU"><img src="https://img.shields.io/youtube/views/koAzUgNQaDU?style=social">
+ABHINAS BAAP
 
 ### Deploy To Heroku 📡</h4>
 
