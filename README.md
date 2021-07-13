@@ -132,5 +132,5 @@ If you donlt like to play in linked channel:
 
 ### Credits
 #### Special Credits
-- [Zaute-Km](https://github.com/Zaute-Km): LushaiMusic Developer
+- [abhinasroy](https://t.me/abhinasroy): LushaiMusic Developer
 - [Rojserbest](http://github.com/rojserbest): Callsmusic Developer
