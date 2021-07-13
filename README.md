@@ -133,4 +133,4 @@ If you donlt like to play in linked channel:
 ### Credits
 #### Special Credits
 - [abhinasroy](https://t.me/abhinasroy): LushaiMusic Developer
-- [Rojserbest](http://github.com/rojserbest): Callsmusic Developer
+- [abhinasroy_2](@abhinasroy_1234): sab Ka baap
