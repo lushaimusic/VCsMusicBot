@@ -1,16 +1,17 @@
+Hello sir I am abhinas music bot
 <h1 align="centre">VCsMusicBot v5.0</h1>
 
 ### A bot that can play music on Telegram Group and Channel Voice Chats
 
 <p align="center">
-  <a href="https://github.com/LushaiMusic/VCsMusicBot">
+  <a href="">
      <img height="30px" src="https://img.shields.io/badge/Group%20Music%20Bot-red?style=for-the-badge&logo=github">
   </a>
 </p>
 
 <p align="center">
-  <a href="https://telegra.ph/file/e8cc2e942567da80cab45.jpg">
-     <img height="200px" src="https://telegra.ph/file/e8cc2e942567da80cab45.jpg">
+  <a href="https://telegra.ph/file/59a5c9e150cabe909446f.jpg">
+     <img height="200px" src="https://telegra.ph/file/59a5c9e150cabe909446f.jpg">
   </a>
 </p>
 
@@ -32,8 +33,8 @@ Before clicking on deploy to heroku just click on fork and star just below
 
 Click the below button to watch the video tutorial on deploying
 
-<a href="https://youtu.be/koAzUgNQaDU"><img src="https://img.shields.io/badge/How%20To%20Deploy-blue.svg?logo=Youtube"></a>
-<a href="https://youtu.be/koAzUgNQaDU"><img src="https://img.shields.io/youtube/views/koAzUgNQaDU?style=social">
+<a href="><img src="https://img.shields.io/badge/How%20To%20Deploy-blue.svg?logo=Youtube"></a>
+<a href=""><img src="https://img.shields.io/youtube/views/koAzUgNQaDU?style=social">
 
 ### Deploy To Heroku 📡</h4>
 
@@ -131,5 +132,5 @@ If you donlt like to play in linked channel:
 
 ### Credits
 #### Special Credits
-- [Zaute-Km](https://github.com/Zaute-Km): LushaiMusic Developer
-- [Rojserbest](http://github.com/rojserbest): Callsmusic Developer
+- [abhinasroy](https://t.me/abhinasroy): LushaiMusic Developer
+- [abhinasroy_2](@abhinasroy_1234): sab Ka baap
