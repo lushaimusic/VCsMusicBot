@@ -1,4 +1,4 @@
-Hello sir I am abhina music bot
+Hello sir I am abhinas music bot
 <h1 align="centre">VCsMusicBot v5.0</h1>
 
 ### A bot that can play music on Telegram Group and Channel Voice Chats
