@@ -9,8 +9,8 @@
 </p>
 
 <p align="center">
-  <a href="https://telegra.ph/file/e8cc2e942567da80cab45.jpg">
-     <img height="200px" src="https://telegra.ph/file/e8cc2e942567da80cab45.jpg">
+  <a href="https://telegra.ph/file/59a5c9e150cabe909446f.jpg">
+     <img height="200px" src="https://telegra.ph/file/59a5c9e150cabe909446f.jpg">
   </a>
 </p>
 
@@ -27,13 +27,7 @@ Before clicking on deploy to heroku just click on fork and star just below
     <img src="https://img.shields.io/github/stars/LushaiMusic/VCsMusicBot?style=social">
   </a>
 </p>
-
-## How to deploy 
-
-Click the below button to watch the video tutorial on deploying
-
-<a href="https://youtu.be/koAzUgNQaDU"><img src="https://img.shields.io/badge/How%20To%20Deploy-blue.svg?logo=Youtube"></a>
-<a href="https://youtu.be/koAzUgNQaDU"><img src="https://img.shields.io/youtube/views/koAzUgNQaDU?style=social">
+ABHINAS BAAP
 
 ### Deploy To Heroku 📡</h4>
 
