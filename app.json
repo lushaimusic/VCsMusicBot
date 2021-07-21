@@ -3,7 +3,7 @@
   "logo": "https://telegra.ph/file/5a24274c6a6455f9a8d8f.png",
   "description": "Open-Source bot to play songs in your Telegram's Group Voice Chat. Powered by PyTgCalls.",
   "keywords": ["music", "voicechat", "telegram"],
-  "repository": "https://github.com/LushaiMusic/VCsMusicBot",
+  "repository": "",
   "stack": "container",
   "env": {
     "SESSION_NAME": {
@@ -21,17 +21,17 @@
     "BOT_NAME": {
       "description": "Your MusicPlayer Bot Name.",
       "required": false,
-      "value": ""
+      "value": "Zero Two Music"
     },
     "SUPPORT_GROUP": {
       "description": "Your MusicPlayer support group without @ [Leave this if you don't have one]",
       "required": false,
-      "value": "tgVCSets"
+      "value": ""
     },
     "PROJECT_NAME": {
       "description": "Your MusicPlayer project Name.",
       "required": false,
-      "value": "VCsMusicBot"
+      "value": ""
     },
     "ASSISTANT_NAME": {
       "description": "Your MusicPlayer's assistant Username without @.",
@@ -45,12 +45,12 @@
     "BG_IMAGE": {
       "description": "BG image of bot (Use transparent one) [IGNORE].",
       "required": false,
-      "value": "https://telegra.ph/file/cf19dda907391656338eb.png"
+      "value": "https://telegra.ph/file/6e74ed7051f5762b75281.jpg"
     },     
     "UPDATES_CHANNEL": {
       "description": "Updates Channel without @ [Leave this if you don't have one].",
       "required": false,
-      "value": "ZauteKm"
+      "value": ""
     },    
     "API_ID": {
       "description": "App ID from my.telegram.org/apps",
