@@ -8,16 +8,11 @@ import aiohttp
 import ffmpeg
 import requests
 import wget
-from PIL import Image
-from PIL import ImageDraw
-from PIL import ImageFont
-from pyrogram import Client
-from pyrogram import filters
+from PIL import Image, ImageDraw, ImageFont
+from pyrogram import Client, filters
 from pyrogram.types import Voice
 from pyrogram.errors import UserAlreadyParticipant
-from pyrogram.types import InlineKeyboardButton
-from pyrogram.types import InlineKeyboardMarkup
-from pyrogram.types import Message
+from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 from Python_ARQ import ARQ
 from youtube_search import YoutubeSearch
 
@@ -32,11 +27,10 @@ from VCsMusicBot.helpers.channelmusic import get_chat_id
 from VCsMusicBot.helpers.errors import DurationLimitError
 from VCsMusicBot.helpers.decorators import errors
 from VCsMusicBot.helpers.decorators import authorized_users_only
-from VCsMusicBot.helpers.filters import command
-from VCsMusicBot.helpers.filters import other_filters
+from VCsMusicBot.helpers.filters import command, other_filters
 from VCsMusicBot.helpers.gets import get_file_name
 from VCsMusicBot.services.callsmusic import callsmusic
-from VCsMusicBot.services.callsmusic import client as USER
+from VCsMusicBot.services.callsmusic.callsmusic import client as USER
 from VCsMusicBot.services.converter.converter import convert
 from VCsMusicBot.services.downloaders import youtube
 from VCsMusicBot.services.queues import queues
