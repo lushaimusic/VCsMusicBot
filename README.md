@@ -28,16 +28,24 @@ Before clicking on deploy to heroku just click on fork and star just below
   </a>
 </p>
 
-## How to deploy 
+## Deploy to Qovery
 
-Click the below button to watch the video tutorial on deploying
+<p align="left">
+  <a href="https://qovery.com">
+     <img height="30px" src="https://img.shields.io/badge/Deploy%20To%20Qovery-blueviolet?style=for-the-badge&logo=qovery">
+  </a>
+</p>
 
-<a href="https://youtu.be/koAzUgNQaDU"><img src="https://img.shields.io/badge/How%20To%20Deploy-blue.svg?logo=Youtube"></a>
-<a href="https://youtu.be/koAzUgNQaDU"><img src="https://img.shields.io/youtube/views/koAzUgNQaDU?style=social">
 
 ### Deploy To Heroku 📡</h4>
 
 <p align="center"><a href="https://heroku.com/deploy?template=https://github.com/LushaiMusic/VCsMusicBot"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-blueviolet?style=for-the-badge&logo=heroku" width="210" height="34.45"/></a></p>
+
+- Click the below button to watch the video tutorial on deploying
+
+<a href="https://youtu.be/koAzUgNQaDU"><img src="https://img.shields.io/badge/How%20To%20Deploy%20on%20Heroku-blue.svg?logo=Youtube"></a>
+<a href="https://youtu.be/koAzUgNQaDU"><img src="https://img.shields.io/youtube/views/koAzUgNQaDU?style=social">
+
 
 ###  GET STRING SESSION FROM REPL RUN
 
